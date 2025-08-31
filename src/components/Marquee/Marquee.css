@@ -1,0 +1,48 @@
+.marquee {
+  overflow: hidden;
+  padding: 2rem 0;
+  border-top: 2px solid var(--charcoal);
+  border-bottom: 2px solid var(--charcoal);
+}
+.marquee-content {
+  display: flex;
+  animation: scroll 40s linear infinite;
+}
+.marquee-item {
+  flex-shrink: 0;
+  padding: 0 2rem;
+  font-family: "Fredoka One", cursive;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testimonials-marquee .marquee-item {
+  width: 350px;
+}
+.testimonial-card {
+  background: #e8f5fd;
+  border: 2px solid #1da1f2;
+  border-radius: 15px;
+  padding: 1rem;
+  text-align: left;
+  font-family: "Inter";
+  font-size: 1rem;
+  width: 100%;
+}
+.testimonial-user {
+  font-weight: bold;
+}
+.testimonial-user span {
+  color: #657786;
+  font-weight: normal;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

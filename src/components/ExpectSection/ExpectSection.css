@@ -1,0 +1,27 @@
+.topics-list {
+  list-style: none;
+  padding: 0;
+  margin: auto;
+  max-width: 600px;
+}
+.topics-list li {
+  font-size: 3rem;
+  font-family: "Fredoka One", cursive;
+  padding: 1rem;
+  cursor: pointer;
+  border-bottom: 2px solid var(--light-taupe);
+  transition: color 0.2s ease;
+}
+.topics-list li:hover {
+  color: var(--dark-orange);
+}
+.cursor-preview-image {
+  position: fixed;
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  border: 5px solid var(--charcoal);
+  z-index: 9999;
+  pointer-events: none;
+  transition: transform 0.1s linear;
+}

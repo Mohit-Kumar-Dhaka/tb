@@ -1,0 +1,13 @@
+.footer-cta {
+  background-color: var(--charcoal);
+}
+.footer-cta .main-headline {
+  color: var(--base-bg);
+  -webkit-text-stroke: 2px var(--dark-orange);
+  text-shadow: none;
+}
+.footer-cta button {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  padding: 1.2rem 2.5rem;
+}

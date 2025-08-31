@@ -1,0 +1,64 @@
+.sticker-bg-pink {
+  background-color: var(--pink);
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  transform: rotate(-2deg);
+  border: 2px solid var(--charcoal);
+  box-shadow: 4px 4px 0 var(--charcoal);
+}
+.speakers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+.speaker-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition-property: opacity, transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+.speakers-grid.visible .speaker-card {
+  opacity: 1;
+  transform: translateY(0);
+}
+.speaker-card {
+  background: var(--warm-white);
+  border: 2px solid var(--charcoal);
+  border-radius: 15px;
+  box-shadow: 6px 6px 0 var(--charcoal);
+}
+.speaker-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  border-bottom: 2px solid var(--charcoal);
+}
+.speaker-info {
+  padding: 1rem;
+  text-align: left;
+}
+.speaker-tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--charcoal);
+}
+.tag-keynote {
+  background: var(--light-orange);
+}
+.tag-design {
+  background: var(--pink);
+}
+.tag-engineering {
+  background: var(--yellow);
+}
+.tag-product {
+  background: #87ceeb;
+}

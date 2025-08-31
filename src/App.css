@@ -1,38 +1,56 @@
-.App {
+/* --- APP-WIDE STYLES --- */
+.App main {
+  width: 100%;
+}
+
+section {
+  padding: 6rem 2rem;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.button-primary {
+  background: var(--dark-orange);
+  color: var(--warm-white);
+  border: 2px solid var(--charcoal);
+  padding: 1rem 2rem;
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.2rem;
+  box-shadow: 4px 4px 0 var(--charcoal);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.button-primary:hover {
+  transform: scale(1.05) translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--charcoal);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-headline {
+  font-family: 'Fredoka One', cursive;
+  font-size: clamp(3rem, 10vw, 6rem);
+  text-shadow: 6px 6px 0 var(--charcoal);
+  -webkit-text-stroke: 2px var(--charcoal);
+  color: var(--base-bg);
+  margin: 0;
+}
+
+.section-title {
+  font-family: 'Fredoka One', cursive;
+  font-size: 3rem;
+  margin-bottom: 3rem;
 }

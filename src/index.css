@@ -1,13 +1,25 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* --- GLOBAL STYLES & FONTS --- */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter:wght@400;600&display=swap');
+
+:root {
+  --base-bg: #FFF8DC;
+  --charcoal: #4A4A4A;
+  --warm-white: #FFFFFFF0;
+  --light-taupe: #C4B7A6;
+  --pink: #FF89BB;
+  --yellow: #FFD700;
+  --light-orange: #FF8C69;
+  --dark-orange: #f97316;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--base-bg);
+  color: var(--charcoal);
+  overflow-x: hidden;
 }
