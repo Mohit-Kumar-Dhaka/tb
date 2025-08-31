@@ -52,7 +52,7 @@ const EventsSection = ({ onNavigate }) => {
           ))}
         </div>
 
-        <a href='#' className="button-primary back-button">
+        <a href='/about' className="button-primary back-button">
           Back to Home
         </a>
       </div>

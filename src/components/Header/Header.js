@@ -14,7 +14,7 @@ const Header = () => {
       
       <div className="header-logo">
         
-        <a href="#">
+        <a href="/about">
           <h1>TECHBOARD</h1>
         </a>
       </div>
